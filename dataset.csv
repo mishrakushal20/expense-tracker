@@ -1,0 +1,314 @@
+description,category,clean_description
+ordered paneer butter masala,food,paneer butter masala
+ate chicken biryani,food,chicken biryani
+drank cold coffee,food,cold coffee
+evening tea snacks,food,tea snacks
+ordered pizza from dominos,food,pizza dominos
+ate burger at mcdonalds,food,burger mcdonalds
+street food vada pav,food,vada pav
+pani puri with friends,food,pani puri
+swiggy food order,food,swiggy food
+zomato dinner order,food,zomato dinner
+
+uber ride to college,transportation,uber ride college
+ola cab booking,transportation,ola cab
+auto fare paid,transportation,auto fare
+bus ticket purchase,transportation,bus ticket
+train ticket booking,transportation,train ticket
+metro recharge card,transportation,metro recharge
+petrol refill bike,transportation,petrol refill
+diesel car fuel,transportation,diesel fuel
+taxi airport ride,transportation,taxi airport
+parking charges mall,transportation,parking
+
+paid electricity bill,utilities,electricity bill
+wifi recharge monthly,utilities,wifi recharge
+mobile recharge prepaid,utilities,mobile recharge
+gas cylinder refill,utilities,gas refill
+water bill payment,utilities,water bill
+internet broadband bill,utilities,internet bill
+phone bill postpaid,utilities,phone bill
+dth recharge tata sky,utilities,dth recharge
+bought light bulb,utilities,light bulb
+tube light replacement,utilities,tube light
+
+amazon shopping order,shopping,amazon order
+flipkart mobile purchase,shopping,flipkart mobile
+bought new shoes,shopping,buy shoes
+purchased jeans tshirt,shopping,jeans tshirt
+laptop purchase online,shopping,laptop purchase
+mobile phone purchase,shopping,mobile purchase
+headphones bought online,shopping,headphones
+watch purchase,shopping,watch purchase
+gaming accessories buy,shopping,gaming accessories
+clothes shopping mall,shopping,clothes shopping
+
+doctor consultation fee,health,doctor visit
+hospital treatment bill,health,hospital bill
+medicine purchase pharmacy,health,medicine purchase
+dentist checkup fee,health,dentist visit
+blood test lab,health,blood test
+health checkup full body,health,health checkup
+x ray scan hospital,health,xray scan
+covid test report,health,covid test
+clinic visit fee,health,clinic visit
+medical expenses total,health,medical expenses
+
+movie tickets booked,entertainment,movie tickets
+netflix subscription payment,entertainment,netflix
+spotify premium recharge,entertainment,spotify
+youtube premium recharge,entertainment,youtube premium
+amazon prime subscription,entertainment,amazon prime
+gaming purchase steam,entertainment,gaming purchase
+concert ticket booking,entertainment,concert ticket
+football match ticket,entertainment,match ticket
+ott subscription payment,entertainment,ott subscription
+tv show subscription,entertainment,tv subscription
+
+school fees payment,education,school fees
+college tuition fees,education,college fees
+bought books study,education,buy books
+online course udemy,education,online course
+exam fees paid,education,exam fees
+notebook purchase stationery,education,notebook purchase
+pen pencil purchase,education,stationery
+coaching class fees,education,coaching fees
+training program fees,education,training fees
+study material purchase,education,study material
+
+detergent purchase home,household,detergent
+soap purchase home,household,soap
+floor cleaner liquid,household,floor cleaner
+broom purchase cleaning,household,broom
+mop cleaning house,household,mop
+kitchen utensils purchase,household,utensils
+dishwash liquid,household,dishwash
+garbage bags purchase,household,garbage bags
+cleaning supplies home,household,cleaning supplies
+home maintenance items,household,home maintenance
+
+haircut salon,personal_care,haircut
+salon grooming visit,personal_care,salon visit
+cosmetics purchase makeup,personal_care,cosmetics
+shampoo bought,personal_care,shampoo
+facewash skincare purchase,personal_care,skincare
+beauty parlour visit,personal_care,parlor visit
+spa relaxation visit,personal_care,spa visit
+hair styling salon,personal_care,hair styling
+facial treatment salon,personal_care,facial treatment
+self care items,personal_care,self care
+
+random expense unknown,others,random expense
+miscellaneous payment,others,miscellaneous
+unexpected cost occurred,others,unexpected cost
+other expenses,others,other expense
+general spending,others,general spending
+ordered dosa breakfast,food,dosa breakfast
+ate samosa chai,food,samosa chai
+butter chicken dinner,food,butter chicken
+fried rice lunch,food,fried rice
+noodles from restaurant,food,noodles restaurant
+cold drink pepsi,food,pepsi drink
+coffee at starbucks,food,coffee starbucks
+tea stall expense,food,tea stall
+snacks chips purchase,food,chips snacks
+ice cream dessert,food,ice cream
+
+uber ride home,transportation,uber ride home
+ola ride office,transportation,ola office
+auto fare market,transportation,auto market
+bus pass recharge,transportation,bus pass
+train local ticket,transportation,train local
+metro travel recharge,transportation,metro travel
+petrol filled bike,transportation,petrol bike
+diesel refill car,transportation,diesel car
+taxi night ride,transportation,taxi night
+parking fee office,transportation,parking office
+
+electricity monthly bill,utilities,electricity bill
+wifi recharge plan,utilities,wifi plan
+mobile recharge pack,utilities,mobile pack
+gas refill cylinder,utilities,gas cylinder
+water supply bill,utilities,water supply
+internet broadband recharge,utilities,internet broadband
+phone recharge prepaid,utilities,phone prepaid
+dth recharge dish tv,utilities,dth dish
+bought led bulb,utilities,led bulb
+fan repair electric,utilities,fan repair
+
+amazon clothes shopping,shopping,amazon clothes
+flipkart electronics purchase,shopping,flipkart electronics
+bought sneakers online,shopping,sneakers
+purchased tshirt jeans,shopping,tshirt jeans
+laptop accessories purchase,shopping,laptop accessories
+mobile cover purchase,shopping,mobile cover
+earphones buy online,shopping,earphones
+watch purchase mall,shopping,watch mall
+gaming mouse purchase,shopping,gaming mouse
+bag purchase college,shopping,bag purchase
+
+doctor visit clinic,health,doctor clinic
+hospital bill payment,health,hospital bill
+medicine purchase medical,health,medicine medical
+dentist cleaning checkup,health,dentist cleaning
+blood test report,health,blood report
+full body checkup,health,body checkup
+xray chest scan,health,xray chest
+covid test clinic,health,covid clinic
+clinic fees paid,health,clinic fees
+medical store purchase,health,medical store
+
+movie ticket booking,entertainment,movie booking
+netflix yearly plan,entertainment,netflix yearly
+spotify monthly payment,entertainment,spotify monthly
+youtube premium subscription,entertainment,youtube premium
+amazon prime recharge,entertainment,amazon prime
+gaming subscription steam,entertainment,gaming steam
+concert pass booking,entertainment,concert pass
+football match entry,entertainment,football match
+ott recharge subscription,entertainment,ott recharge
+tv serial subscription,entertainment,tv serial
+
+school fees monthly,education,school monthly
+college fees semester,education,college semester
+bought academic books,education,academic books
+online coding course,education,coding course
+exam form fees,education,exam form
+notebook stationery purchase,education,notebook stationery
+pen purchase stationery,education,pen stationery
+coaching institute fees,education,coaching institute
+training course fees,education,training course
+study materials purchase,education,study materials
+
+detergent washing powder,household,detergent powder
+soap bar purchase,household,soap bar
+floor cleaner purchase,household,floor cleaner
+broom cleaning house,household,broom cleaning
+mop purchase cleaning,household,mop purchase
+kitchen items utensils,household,kitchen utensils
+dishwash soap purchase,household,dishwash soap
+garbage bags buy,household,garbage bags
+cleaning liquid purchase,household,cleaning liquid
+home repair items,household,home repair
+
+haircut barber shop,personal_care,barber haircut
+salon hair styling,personal_care,hair styling
+cosmetics makeup purchase,personal_care,cosmetics makeup
+shampoo bottle purchase,personal_care,shampoo bottle
+facewash skincare product,personal_care,facewash skincare
+beauty parlour service,personal_care,beauty parlour
+spa treatment visit,personal_care,spa treatment
+hair spa salon,personal_care,hair spa
+facial treatment beauty,personal_care,facial beauty
+self care products,personal_care,self care
+
+misc expense random,others,misc expense
+unexpected spending cost,others,unexpected spending
+other payments done,others,other payments
+general random expense,others,general expense
+unknown purchase,others,unknown purchase
+ordered pav bhaji dinner,food,pav bhaji
+ate idli sambar,food,idli sambar
+breakfast poha expense,food,poha breakfast
+tea with biscuits,food,tea biscuits
+coffee with sandwich,food,coffee sandwich
+chinese noodles lunch,food,chinese noodles
+veg thali meal,food,veg thali
+non veg dinner chicken curry,food,chicken curry
+cold coffee cafe,food,cold coffee
+juice fruit drink,food,fruit juice
+
+uber ride airport,transportation,uber airport
+ola ride railway station,transportation,ola railway
+auto fare college,transportation,auto college
+bus ticket daily travel,transportation,bus travel
+train ticket long journey,transportation,train journey
+metro recharge card travel,transportation,metro card
+petrol refill scooter,transportation,petrol scooter
+diesel refill vehicle,transportation,diesel vehicle
+taxi ride city,transportation,taxi city
+parking fee mall,transportation,parking mall
+
+electricity bill payment online,utilities,electricity online
+wifi recharge internet,utilities,wifi internet
+mobile recharge data pack,utilities,mobile data
+gas refill home cylinder,utilities,gas home
+water bill online payment,utilities,water online
+internet bill monthly,utilities,internet monthly
+phone recharge prepaid plan,utilities,phone plan
+dth recharge set top box,utilities,dth settop
+light bulb purchase home,utilities,light bulb
+fan repair service,utilities,fan service
+
+amazon order new shoes,shopping,amazon shoes
+flipkart purchase headphones,shopping,flipkart headphones
+bought jacket winter,shopping,jacket winter
+purchased tshirt casual,shopping,tshirt casual
+laptop bag purchase,shopping,laptop bag
+mobile accessories purchase,shopping,mobile accessories
+earbuds purchase online,shopping,earbuds online
+watch gift purchase,shopping,watch gift
+gaming keyboard purchase,shopping,gaming keyboard
+college bag shopping,shopping,college bag
+
+doctor visit general checkup,health,doctor checkup
+hospital emergency bill,health,hospital emergency
+medicine purchase chemist,health,medicine chemist
+dentist teeth cleaning,health,dentist cleaning
+blood test diagnostic lab,health,blood test
+full body medical checkup,health,medical checkup
+xray scan chest,health,xray scan
+covid test hospital,health,covid hospital
+clinic visit doctor fee,health,clinic doctor
+medical store bill,health,medical bill
+
+movie ticket online booking,entertainment,movie booking
+netflix monthly recharge,entertainment,netflix recharge
+spotify yearly subscription,entertainment,spotify yearly
+youtube premium monthly,entertainment,youtube monthly
+amazon prime yearly plan,entertainment,amazon yearly
+gaming purchase online steam,entertainment,gaming online
+concert event ticket,entertainment,concert event
+football match stadium ticket,entertainment,football stadium
+ott subscription renewal,entertainment,ott renewal
+tv show streaming subscription,entertainment,tv streaming
+
+school fees quarterly,education,school quarterly
+college semester fees payment,education,semester fees
+bought reference books,education,reference books
+online programming course,education,programming course
+exam registration fees,education,exam registration
+notebook purchase stationery shop,education,notebook shop
+pen set purchase,education,pen set
+coaching tuition fees,education,tuition fees
+training workshop fees,education,workshop fees
+study notes material purchase,education,study notes
+
+detergent liquid purchase,household,detergent liquid
+soap liquid handwash,household,soap handwash
+floor cleaner phenyl,household,phenyl cleaner
+broom purchase home,household,broom home
+mop stick purchase,household,mop stick
+kitchen utensils steel,household,utensils steel
+dishwash bar purchase,household,dishwash bar
+garbage bags household,household,garbage household
+cleaning spray purchase,household,cleaning spray
+home repair maintenance,household,home maintenance
+
+haircut salon visit,personal_care,haircut salon
+salon hair smoothening,personal_care,hair smoothening
+cosmetics makeup kit,personal_care,makeup kit
+shampoo hair care,personal_care,shampoo hair
+facewash daily skincare,personal_care,facewash daily
+beauty parlour facial,personal_care,facial parlour
+spa massage relaxation,personal_care,spa massage
+hair spa treatment,personal_care,hair spa
+facial glow treatment,personal_care,facial glow
+self grooming products,personal_care,self grooming
+
+miscellaneous random purchase,others,misc purchase
+unexpected bill payment,others,unexpected bill
+other random spending,others,random spending
+general expense payment,others,general payment
+unknown expense entry,others,unknown expense
+

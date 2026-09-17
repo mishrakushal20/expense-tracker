@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-10">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url 'expenses' %}">Expenses</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Expense Summary Dashboard</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5>Spending by Category</h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="categoryPieChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5>Spending This Week</h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="weeklySpendingLineChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'js/Chart.min.js' %}"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Django view se data lena
+        const categoryLabels = JSON.parse('{{ category_labels|default:"[]"|safe }}');
+        const categoryData = JSON.parse('{{ category_data|default:"[]"|safe }}');
+        const dailyLabels = JSON.parse('{{ daily_labels|default:"[]"|safe }}');
+        const dailyData = JSON.parse('{{ daily_data|default:"[]"|safe }}');
+
+        // Pie Chart for Categories
+        const ctxPie = document.getElementById('categoryPieChart').getContext('2d');
+        new Chart(ctxPie, {
+            type: 'pie',
+            data: {
+                labels: categoryLabels,
+                datasets: [{
+                    label: 'Spending',
+                    data: categoryData,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.8)',
+                        'rgba(54, 162, 235, 0.8)',
+                        'rgba(255, 206, 86, 0.8)',
+                        'rgba(75, 192, 192, 0.8)',
+                        'rgba(153, 102, 255, 0.8)',
+                        'rgba(255, 159, 64, 0.8)'
+                    ],
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        // Line Chart for Weekly Spending
+        const ctxLine = document.getElementById('weeklySpendingLineChart').getContext('2d');
+        new Chart(ctxLine, {
+            type: 'line',
+            data: {
+                labels: dailyLabels,
+                datasets: [{
+                    label: 'Daily Spending',
+                    data: dailyData,
+                    fill: true,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>
+{% endblock %}

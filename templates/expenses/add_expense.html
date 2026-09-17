@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'expenses'%}">Expenses</a>
+            </li>
+            <li class="breadcrumb-item active">Add Expenses</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+        <div class="card-body">
+            <form action="{% url 'add-expenses' %}" method="post">
+                {% include 'partials/_messages.html'%}
+                {% csrf_token %}
+
+                <div class="form-group">
+                    <label>Amount</label>
+                    <input type="number" class="form-control form-control-sm" name="amount" value="{{values.amount}}" />
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <input type="text" class="form-control form-control-sm" 
+                           name="description" id="description-input"
+                           value="{{values.description}}" />
+
+                    <!-- Loader -->
+                    <div id="loading-indicator" style="display: none;">
+                        <img src="{% static 'img/loader.gif' %}" width="25">
+                    </div>
+                </div>
+
+                <!-- 🔥 CATEGORY AUTO-FILL -->
+                <div class="form-group">
+                    <label>Category (Auto)</label>
+                    <input type="text" class="form-control" 
+                           name="category" id="category-input"
+                           readonly />
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Expense</label>
+                    <input type="date" class="form-control form-control-sm" name="expense_date" />
+                </div>
+
+                <input type="submit" value="Submit" class="btn btn-primary btn-sm" />
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.getElementById('description-input');
+    const category = document.getElementById('category-input');
+
+    let timeout = null;
+
+    if (!input || !category) {
+        console.log("Elements not found");
+        return;
+    }
+
+    input.addEventListener('input', function () {
+        const desc = input.value;
+        clearTimeout(timeout);
+
+        timeout = setTimeout(() => {
+            if (desc.length < 2) return;
+
+            fetch('{% url "predict-category" %}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ description: desc })
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log("API:", data);
+                category.value = data.category || '';
+            })
+            .catch(err => console.log("Error:", err));
+
+        }, 300);
+    });
+});
+</script>
